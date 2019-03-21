@@ -1,0 +1,52 @@
+<!--[main]-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="app/templates/theme3/css/dashboard.css">
+<link rel="stylesheet" href="app/templates/theme3/css/materialize.css">
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+<div class="panel panel-default">
+    <div class="panel-heading"><div class="panel-title" style="text-align:center;color:black">Movimentações</p></div> </div>
+    
+    <div class="panel-body">
+    
+        <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+            <div class="info-box bg-light-green hover-expand-effect   ">
+                  <div class="icon">
+                     <i class="material-icons">attach_money</i>
+                  </div>
+                  <div class="content">
+                     <div class="text"><b>SALDO DE CONTA</b></div>
+                     <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20">{$saldo}</div>
+                  </div>
+            </div>
+      </div>
+            
+      <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+         <div class="info-box bg-red hover-expand-effect">
+             <div class="icon">
+                 <i class="material-icons">mood_bad</i>
+             </div>
+             <div class="content">
+                 <div class="text" style="color:white; font-family: Roboto, Sans Serif;">CONTAS A PAGAR</div>
+                 <div class="number count-to" data-from="0" data-to="243" data-speed="1000" data-fresh-interval="20"style="color:white">{$contaPagar}</div>
+             </div>
+         </div>
+      </div>
+
+      <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box bg-light-green hover-expand-effect">
+            <div class="icon">
+                <i class="material-icons">mood</i>
+            </div>
+            <div class="content">
+                <div class="text"><b>CONTAS A RECEBER</b></div>
+                <div class="number count-to" data-from="0" data-to="243" data-speed="1000" data-fresh-interval="20">{$contaReceber}</div>
+            </div>
+        </div>
+     </div>
+
+    </div>
+</div>
+ 
+
+<!--[/main]-->
